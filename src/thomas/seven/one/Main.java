@@ -24,22 +24,22 @@ public class Main {
 
         for (int i = 0; i < scores.length; i++) {       // give grade
 
-            System.out.printf("\nStudent %d score is %d and grade is %s",i,scores[i],getGrade(scores[i],best));
+            System.out.printf("\nStudent %d score is %d and grade is %s", i, scores[i], getGrade(scores[i], best));
         }
 
     }
 
-    public  static char getGrade(int score, int best){ // returns a grade determined by the best score
+    public static char getGrade(int score, int best) { // returns a grade determined by the best score
 
-        if(score >= best-10){
+        if (score >= best - 10) {
             return 'A';
-        }else if(score >= best-20){
+        } else if (score >= best - 20) {
             return 'B';
-        }else if(score>= best-30){
+        } else if (score >= best - 30) {
             return 'C';
-        }else if(score >= best-40){
+        } else if (score >= best - 40) {
             return 'D';
-        }else return 'F';
+        } else return 'F';
 
 
     }
